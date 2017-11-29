@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="./styles/monokai-sublime.css">
+    <script src="./highlight.pack.js"></script>
+</head>
+
+<body>
+
+    <pre>
+        <code class="html">
+            <h2>Hello</h2>
+        </code>
+    </pre>
+
+    <pre>
+
+        <code class="css">
+        #hljs,
+        .hljs-subst,
+        [input] {
+        color: #444 !important;
+        }
+        </code>
+    </pre>
+    <pre>
+        <code class="js">
+            var $code = document.getElementsByClassName("html");
+            for (var i = 0; i < $code.length; i++) {
+                var element = $code[i];
+                element.innerText = element.innerHTML;
+            }
+        </code>
+    </pre>
+    <pre >
+        <code class="html" id="container">
+            <div>
+                <h2>haha</h2>
+            </div>
+        </code>
+    </pre>
+
+    <script>
+        var $code = document.getElementsByClassName("html");
+        for (var i = 0; i < $code.length; i++) {
+            var element = $code[i];
+            element.innerText = element.innerHTML;
+        }
+    </script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</body>
+
+</html>
